@@ -52,15 +52,18 @@ body {
     font-size: 50px;
     font-weight: bold;
 }
-#title span{
+
+#title span {
     color: #8b3651;
     font-size: 60px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
-#name span{
+
+#name span {
     color: #8b3651;
 }
+
 #role {
     font-size: 20px;
 }
@@ -109,4 +112,47 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+#github {
+    color: white;
+}
+
+#about #about-col-1 img {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+#about-col-1 {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+#sub-title{
+    color: rgb(184, 178, 178);
+}
+#about-col-2{
+    flex-basis: 80%;
+    text-align: start;
+}
+#about-container {
+    display: flex;
+    flex-wrap: true;
+}
+.about-titles{
+    display: flex;
+    flex-wrap: true;
+    justify-content: space-around;
+}
+.activate{
+    font-size: 20px;
+    color: #8b3651;
+    font-weight: bold;
+}
+.about-titles {
+    cursor: pointer;
+    color: rgb(225, 213, 213)
 }
