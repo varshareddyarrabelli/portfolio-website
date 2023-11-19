@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+@media screen and (max-width: 400px) {
+    #intro {
+        width: 100%;
+        max-width: none;
+        color: white;
+    }
+
+    #header img {
+        display: none;
+        width: auto;
+    }
+}
+
+
+#header {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+#main{
+    color: white;
+}
+#intro {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    margin-left: 6em;
+}
+
+#header img{
+    height: auto;
+    max-width: 100%;
+}
+
+#name{
+    font-size: 50px;
+}
+#role{
+    font-size: 20px;
+}
+#container{
+    padding: 1em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav p{
+    font-size: 2.5em;
+    margin-left: 0.8em;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 1.5em;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #8b3651;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
