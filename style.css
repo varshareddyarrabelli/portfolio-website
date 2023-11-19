@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -29,9 +29,11 @@ body {
     height: 80vh;
     display: flex;
 }
-#main{
+
+#main {
     color: white;
 }
+
 #intro {
     width: 60vw;
     display: flex;
@@ -39,48 +41,63 @@ body {
     justify-content: center;
     color: white;
     padding: 1em;
-    margin: 1em;
     margin-left: 6em;
 }
 
-#header img{
+#header img {
     height: auto;
     max-width: 100%;
 }
 
-#name{
+#name {
     font-size: 50px;
+    font-weight: bold;
 }
-#role{
+#title span{
+    color: #8b3651;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#name span{
+    color: #8b3651;
+}
+#role {
     font-size: 20px;
 }
-#container{
+
+#container {
     padding: 1em;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-nav p{
+
+nav p {
     font-size: 2.5em;
     margin-left: 0.8em;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-nav ul li{
+
+nav ul li {
     margin: 1.5em;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1em;
     position: relative;
 }
+
 nav ul li a::after {
     content: '';
     width: 0;
@@ -92,6 +109,6 @@ nav ul li a::after {
     transition: 0.4s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
