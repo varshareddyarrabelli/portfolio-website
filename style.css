@@ -35,13 +35,12 @@ body {
 }
 
 #intro {
-    width: 60vw;
+    /* width: 60vw; */
+    flex-basis: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    padding: 1em;
-    margin-left: 6em;
 }
 
 #header img {
@@ -66,8 +65,8 @@ body {
     font-size: 20px;
 }
 
-#container {
-    padding: 1em;
+.container {
+    padding: 10px 10%;
 }
 
 nav {
@@ -79,7 +78,6 @@ nav {
 
 nav p {
     font-size: 2.5em;
-    margin-left: 0.8em;
 }
 
 nav ul {
