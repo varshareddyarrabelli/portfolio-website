@@ -128,7 +128,7 @@ nav ul li a:hover::after {
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-evenly;
 }
 #sub-title{
@@ -146,13 +146,85 @@ nav ul li a:hover::after {
     display: flex;
     flex-wrap: true;
     justify-content: space-around;
+    align-items: center;
+    background-color: #423c3c;
+    padding: 10px;
+    border-radius: 20px;
+    /* width: 40px; */
 }
 .activate{
     font-size: 20px;
-    color: #8b3651;
+    color: #ce2057;
     font-weight: bold;
 }
 .about-titles {
     cursor: pointer;
     color: rgb(225, 213, 213)
+}
+
+.tab-content ul li span{
+    font-size: 14px;
+    color: #b92b58;
+}
+
+.tab-content{
+    color: rgb(184, 178, 178);
+}
+
+.tab-content ul li{
+    /* list-style: none; */
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.tab-content .explist{
+    display: flex;
+    flex-wrap: false;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.tab-content .explist #company{
+    font-size: 20px;
+    font-weight: bold;
+    color: #b92b58;
+}
+.tab-content .edulist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: false;
+    justify-content: space-between;
+}
+.tab-content span{
+    margin: 10px 0;
+}
+.tab-content .eduspan{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: false;
+}
+/* .tab-content .edulist p{
+    align-items: center;
+    justify-content: center;
+} */
+.tab-content .edulist .subjects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: false;
+    justify-content:center;
+    flex-basis: 50%;
+}
+.tab-content .edulist .subjects span{
+    justify-content:start;
+    align-items: start;
+}
+.tab-content .edulist .gpa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: false;
+    flex-basis: 10%;
+}
+.c1{
+    /* align-items: center; */
+    justify-content: center;
 }

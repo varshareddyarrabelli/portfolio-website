@@ -10,7 +10,7 @@
 
 <body>
     <div id="main">
-        <div class="container">
+        <div id="home" class="container">
             <nav>
                 <p id="title"><span>P</span>ortfolio</p>
                 <ul>
@@ -28,30 +28,109 @@
                 <img src="./images/background.png" alt="Image of Varsha Reddy Arrabelli">
             </div>
         </div>
-        <div id="about">
-            <div class="container" id="about-container">
+        <div id="about" class="container">
+            <div id="about-container">
                 <div id="about-col-1">
-                    <a href="https://github.com/varshareddyarrabelli"><img src="./images/Github.png" alt="Github" id="github"></a>
-                    <a href="https://www.linkedin.com/in/varshareddyarrabelli/"><img src="./images/Linkedin.png" alt="Linkedin"></a>
-                    <a href="https://leetcode.com/varsha_arrabelli/"><img src="./images/Leetcode.png" alt="Leetcode"></a>
-                    <a href="https://github.com/varshareddyarrabelli"><img src="./images/instagram.png" alt="Instagram"></a>
+                    <a href="https://github.com/varshareddyarrabelli" target="_blank"><img src="./images/Github.png"
+                            alt="Github" id="github"></a>
+                    <a href="https://www.linkedin.com/in/varshareddyarrabelli/" target="_blank"><img
+                            src="./images/Linkedin.png" alt="Linkedin"></a>
+                    <a href="https://leetcode.com/varsha_arrabelli/" target="_blank"><img src="./images/Leetcode.png"
+                            alt="Leetcode"></a>
+                    <a href="https://github.com/varshareddyarrabelli" target="_blank"><img src="./images/instagram.png"
+                            alt="Instagram"></a>
                 </div>
                 <div id="about-col-2">
                     <h1>About Me</h1><br>
                     <div id="sub-title">
-                        Talented software development professional with experience. Consistent in delivering clean, error-free, reliable code to meet current or expected needs. Well-versed in software trends and confident in multiple languages, 
-                         frameworks, and programming tools. I want to learn more unknown skills and create new things that enhance the quality of my work.
-                         To utilize my skills in the ﬁeld of industry and contribute to the growth of the organization.
-                    </div><br><hr><br>
+                        Talented software development professional with experience. Consistent in delivering clean,
+                        error-free, reliable code to meet current or expected needs. Well-versed in software trends and
+                        confident in multiple languages,
+                        frameworks, and programming tools. I want to learn more unknown skills and create new things
+                        that enhance the quality of my work.
+                        To utilize my skills in the ﬁeld of industry and contribute to the growth of the organization.
+                    </div><br>
+                    <!-- <hr><br> -->
                     <div class="about-titles">
-                        <p class="activate" onclick="openthis('skills')">Skills</p>
-                        <p class="title2" onclick="openthis('experience')">Experience</p>
-                        <p class="title3" onclick="openthis('skills')">Education</p>
-                    </div> <br><hr><br>
+                        <p class="title activate" onclick="openthis('skills')">Skills</p>
+                        <p class="title" onclick="openthis('experience')">Experience</p>
+                        <p class="title" onclick="openthis('skills')">Education</p>
+                    </div> <br>
+                    <!-- <hr><br> -->
+                    <!-- <div class="tab-content" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span> - C++, C, Java, SQL, Python</li>
+                            <li><span>Web development</span> - HTML, CSS, React, PHP, Javascript, Nodejs</li>
+                            <li><span>App Development</span> - Dart</li>
+                            <li><span>Frameworks</span> - Flutter, Flask, Spring, Nextjs, Spring Boot, Rails</li>
+                            <li><span>Database Management Systems</span> - MYSQL, MongoDB, Firebase</li>
+                            <li><span>Version Control Systems</span> - Git</li>
+                            <li><span>Operating Systems</span> - Windows, Linux</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li class="explist">
+                                <p id="company">Sandvine</p>
+                                <p>Software Engineer Intern</p>
+                                <p>January - July, 2024</p>
+                            </li>
+                            <li> Learning new skills, techniques, and troubleshooting best
+                                practices</li>
+                        </ul><br><hr><br>
+                        <ul>
+                            <li class="explist">
+                                <p id="company">Arcesium</p>
+                                <p>Software Developer Intern</p>
+                                <p>May - July, 2023</p>
+                            </li>
+                            <li>Designed a Java library that enables run-time change in
+                                property values in configuration files without a redeployment process</li>
+                            <li>Developed a front-end interface for clients that helps them
+                                change these values</li>
+                            <li> Produced clean, efficient, and bug-free code for software
+                                development projects through debugging, testing, and
+                                code reviews.</li>
+                            <li>Tech Stack Used: Java, Spring, React, Spring Boot, SQL, Git</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-content" id="education">
+                        <ul>
+                            <li class="edulist">
+                                <div class="eduspan">
+                                    <span>2020-2024</span>
+                                    <p>National Institute of Technology, Calicut</p>
+                                    <p>B.Tech - Computer Science</p>
+                                </div>
+                                <p class="subjects"><span>Core Subjects</span>Data Structures and Algorithms, Software
+                                    Engineering, Operating
+                                    Systems, Database Management Systems,
+                                    Computer Networks, Artificial Intelligence, Information Security</p>
+                                <p class="gpa"><span>CGPA</span>8.38</p>
+                            </li>
+                            <li class="edulist">
+                                <div class="eduspan">
+                                    <span>2018-2020</span>
+                                    <p>Sri Chaitanya College</p>
+                                    <p>Secondary High School</p>
+                                </div>
+                                <p class="subjects c1">Maths, Physics, Chemistry</p>
+                                <p class="gpa c1">95.3%</p>
+                            </li>
+                            <li class="edulist">
+                                <div class="eduspan">
+                                    <span>2017-2018</span>
+                                    <p>SPR School of Excellence</p>
+                                    <p>Secondary High School</p>
+                                </div>
+                                <p class="subjects c1">Telangana State Board</p>
+                                <p class="gpa c1">9.8</p>
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
