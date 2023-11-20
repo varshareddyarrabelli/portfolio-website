@@ -279,6 +279,7 @@ nav ul li a:hover::after {
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    transition: transform 0.5s;
 }
 #work-list div li{
     color: rgb(225, 213, 213);
@@ -294,10 +295,12 @@ nav ul li a:hover::after {
     color: #b92b58;
     font-weight: 700;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
-
+#work-list div:hover{
+    background-color: #534a78;
+    transform: translateY(-10px);
+}
 #work-list div a span{
     font-size: 30px;
     margin-bottom: 5px;
