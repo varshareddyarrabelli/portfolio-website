@@ -201,7 +201,7 @@ nav ul li a:hover::after {
     display: block;
 }
 .tab-content ul li span{
-    font-size: 14px;
+    font-size: 17px;
     color: #b92b58;
 }
 
@@ -212,7 +212,7 @@ nav ul li a:hover::after {
 .tab-content ul li{
     /* list-style: none; */
     margin: 10px 0px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .tab-content .explist{
     display: flex;
