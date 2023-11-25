@@ -241,10 +241,6 @@ nav ul li a:hover::after {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-/* .tab-content .edulist p{
-    align-items: center;
-    justify-content: center;
-} */
 .tab-content .edulist .subjects{
     display: flex;
     flex-direction: column;
