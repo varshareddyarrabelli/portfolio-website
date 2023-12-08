@@ -15,3 +15,11 @@ function openthis(content) {
     event.currentTarget.classList.add("activate"); // Corrected 'Event' to 'event'
     document.getElementById(content).classList.add("active");
 }
+
+function openNav() {
+    document.getElementById("header-nav").style.right = "0";
+  }
+  
+  function closeNav() {
+    document.getElementById("header-nav").style.right = "-150px";
+  }
