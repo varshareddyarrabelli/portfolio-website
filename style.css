@@ -9,7 +9,10 @@ body {
     background-color: black;
 }
 
-
+#portfolio{
+    text-decoration: none;
+    color: white;
+}
 @media screen and (max-width: 400px) {
     #intro {
         width: 100%;
