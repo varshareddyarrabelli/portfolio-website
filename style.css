@@ -61,7 +61,7 @@ body {
     height: 20px;
 }
 
-#header img {
+#background-img {
     height: auto;
     max-width: 100%;
 }
@@ -411,14 +411,14 @@ nav ul li a:hover::after {
         color: white;
     }
 
-    #header img {
+    #background-img {
         display: none;
         width: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #header img {
+    #background-img {
         max-width: 300px;
     }
 
