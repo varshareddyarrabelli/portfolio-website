@@ -301,7 +301,6 @@ nav ul li a:hover::after {
     color: #b92b58;
     font-weight: 700;
     font-size: 12px;
-    text-align: center;
 }
 
 #work-list .work-list-div:hover {
@@ -311,7 +310,8 @@ nav ul li a:hover::after {
 
 #work-list .work-list-div a span {
     color: #b92b58;
-    font-size: 20px;
+    font-size: 30px;
+    padding-bottom: 5px;
 }
 
 #project-list {
@@ -320,8 +320,8 @@ nav ul li a:hover::after {
 
 #project-list .project-list-div {
     background-color: #262626;
-    padding: 5%;
-    margin: 20px;
+    padding: 4em 3.5em;
+    margin: 20px 0px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
