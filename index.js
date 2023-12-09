@@ -21,5 +21,5 @@ function openNav() {
   }
   
   function closeNav() {
-    document.getElementById("header-nav").style.right = "-150px";
+    document.getElementById("header-nav").style.right = "-170px";
   }
