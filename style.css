@@ -103,8 +103,8 @@ nav p {
 }
 
 nav ul {
+    margin: 1em;
     display: flex;
-    margin: 0px;
 }
 
 nav ul li {
