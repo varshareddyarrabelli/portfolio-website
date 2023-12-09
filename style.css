@@ -298,6 +298,7 @@ nav ul li a:hover::after {
     font-size: 12px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #work-list .work-list-div:hover {
@@ -400,7 +401,7 @@ nav ul li a:hover::after {
     color: white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #intro {
         width: 100%;
         max-width: none;
