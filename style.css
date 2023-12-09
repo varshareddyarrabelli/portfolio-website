@@ -104,10 +104,11 @@ nav p {
 
 nav ul {
     display: flex;
+    margin: 0px;
 }
 
 nav ul li {
-    margin: 1.5em;
+    margin-right: 3em;
     list-style: none;
 }
 
@@ -142,7 +143,7 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     background-color: #262626;
     border-radius: 10px;
-    padding: 5%;
+    padding: 2em;
     font-size: 17px;
     color: rgb(184, 178, 178);
 }
