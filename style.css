@@ -293,12 +293,15 @@ nav ul li a:hover::after {
 
 #work-list .work-list-div a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#work-list .work-list-div p {
     color: #b92b58;
     font-weight: 700;
     font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 #work-list .work-list-div:hover {
@@ -307,8 +310,8 @@ nav ul li a:hover::after {
 }
 
 #work-list .work-list-div a span {
-    font-size: 30px;
-    margin-bottom: 5px;
+    color: #b92b58;
+    font-size: 20px;
 }
 
 #project-list {
