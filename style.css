@@ -273,7 +273,7 @@ nav ul li a:hover::after {
 
 #work-list .work-list-div {
     background-color: #262626;
-    padding: 10%;
+    padding: 2.5em 3em;
     font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
@@ -320,7 +320,7 @@ nav ul li a:hover::after {
 
 #project-list .project-list-div {
     background-color: #262626;
-    padding: 4em 3.5em;
+    padding: 3.5em 3.5em;
     margin: 20px 0px;
     font-size: 13px;
     font-weight: 300;
