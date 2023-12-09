@@ -104,11 +104,14 @@ nav p {
 
 nav ul {
     margin: 1em;
+    margin-left: 0em;
     display: flex;
 }
 
 nav ul li {
     margin: 1.5em;
+    margin-left: 0em;
+    margin-right: 3em;
     list-style: none;
 }
 
