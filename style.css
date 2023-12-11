@@ -16,7 +16,6 @@ body {
 
 #header {
     width: 100%;
-    height: 80vh;
     display: flex;
 }
 
@@ -219,9 +218,10 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 
-.tab-content .explist p{
+.tab-content .explist p {
     margin-right: 20px;
 }
+
 .tab-content .explist #company {
     font-size: 20px;
     font-weight: bold;
@@ -415,15 +415,19 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
-    #intro {
-        width: 100%;
-        max-width: none;
-        color: white;
-    }
-
     #background-img {
         display: none;
         width: auto;
+    }
+
+    #intro {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+        color: white;
     }
 }
 
