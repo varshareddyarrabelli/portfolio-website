@@ -421,6 +421,7 @@ nav ul li a:hover::after {
     }
 
     #intro {
+        margin-top: 3em;
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
