@@ -12,14 +12,14 @@ function openthis(content) {
         tabcontent1.classList.remove("active");
     }
 
-    event.currentTarget.classList.add("activate"); // Corrected 'Event' to 'event'
+    event.currentTarget.classList.add("activate");
     document.getElementById(content).classList.add("active");
 }
 
 function openNav() {
     document.getElementById("header-nav").style.right = "0";
-  }
-  
-  function closeNav() {
+}
+
+function closeNav() {
     document.getElementById("header-nav").style.right = "-170px";
-  }
+}

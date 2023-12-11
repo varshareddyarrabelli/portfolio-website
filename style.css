@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 
-#portfolio{
+#portfolio {
     text-decoration: none;
     color: white;
 }
@@ -19,16 +19,17 @@ body {
     height: 80vh;
     display: flex;
 }
+
 #closebtn {
     display: none;
 }
-  
+
 #main {
     color: white;
 }
 
-#drawer{
-    display: none;  
+#drawer {
+    display: none;
 }
 
 #intro {
@@ -206,7 +207,6 @@ nav ul li a:hover::after {
 }
 
 .tab-content ul li {
-    /* list-style: none; */
     margin: 10px 0px;
     font-size: 17px;
 }
@@ -219,6 +219,9 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 
+.tab-content .explist p{
+    margin-right: 20px;
+}
 .tab-content .explist #company {
     font-size: 20px;
     font-weight: bold;
@@ -276,6 +279,9 @@ nav ul li a:hover::after {
 }
 
 #work-list .work-list-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #262626;
     padding: 2.5em 3em;
     font-size: 14px;
@@ -444,7 +450,7 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
-    #drawer{
+    #drawer {
         display: block;
     }
 
@@ -462,18 +468,18 @@ nav ul li a:hover::after {
     #header-nav {
         display: flex;
         flex-direction: column;
-        justify-content:start;
+        justify-content: start;
         align-items: center;
         flex-wrap: wrap;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 15px;
         flex-wrap: wrap;
     }
 
-    nav ul #closebtn{
+    nav ul #closebtn {
         text-decoration: none;
         font-size: 25px;
         color: white;
