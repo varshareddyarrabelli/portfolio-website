@@ -9,3 +9,92 @@ body {
     background-color: black;
     color: white;
 }
+
+#main {
+    color: white;
+}
+
+#main h1{
+    color: #8b3651;
+    margin: 1.5em 1.5em;
+    text-align: center;
+}
+
+.container {
+    padding: 10px 5%;
+    margin: 20px 10px;
+}
+
+video{
+    width: 100%;
+}
+
+#main h2{
+    font-weight: 500;
+}
+
+#description p{
+    color: rgb(225, 213, 213);
+}
+
+#main ul{
+    padding: 0 2%;
+}
+
+#main ul h4{
+    font-weight: 500;
+}
+
+#main ul li{
+    color: rgb(225, 213, 213);
+}
+
+#main ul p{
+    color: rgb(225, 213, 213);
+}
+
+#architecture div{
+    text-align: center;
+}
+
+#architecture div img{
+    width: 100%;
+}
+
+#reports button {
+    width: 170px;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#reports button img {
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+#reports-div div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#reports-div div p{
+    color: rgb(225, 213, 213);
+}
+
+#reports a{
+    text-decoration: none;
+}
+
+#footer {
+    padding: 1%;
+    text-align: center;
+    background-color: #262626;
+}
+
+#copyright {
+    color: white;
+}

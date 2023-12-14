@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Captioning</title>
-    <link rel="stylesheet" href="realTimeConfigUpdate.css">
+    <link rel="stylesheet" href="imageCaptioning.css">
 </head>
 
 <body>
@@ -13,79 +13,115 @@
         <h1>Image Captioning</h1>
         <div id="description" class="container">
             <h2>Description</h2><br>
-            <p>Typically, even minor changes can require days to redeploy the system.
-                To mitigate this issue, we propose implementing a dynamic approach where the values in the configuration
-                file can be reset during runtime, leveraging the data stored in the database.
-                By adopting this approach, users will have the ability to update property values without the necessity
-                of a redeployment.
+            <p> Image captioning aims to detect information by describing the image content through
+                image and text processing techniques. Recent progress in artificial intelligence (AI) has
+                greatly improved the performance of models.
+                However, the results are still not sufficiently
+                satisfying. Machines cannot imitate human
+                brains and the way they communicate, so it remains an ongoing task. <br><br>This project focuses on
+                the development of an image captioning system,
+                a novel approach merging computer vision and
+                natural language processing. Leveraging deep
+                learning techniques, the system aims to automatically generate descriptive and contextually
+                relevant captions for input images. By employing convolutional neural networks (CNNs) for
+                image feature extraction and recurrent neural
+                networks (RNNs) or long short-term memory
+                (LSTM) for language modeling and adapting
+                attention mechanism and GloVe word embeddings to enhance the model, the model learns
+                intricate relationships between visual content
+                and textual descriptions
 
             </p>
         </div>
-        <div id="objective" class="container">
-            <h2>Objective</h2><br>
-            <ul>
-                <li>To enable runtime modification of property values in the
-                    configuration file without requiring a redeployment process.
-                </li>
-                <li>
-                    To design a library which has minimal run time.
-                </li>
-                <li>
-                    To minimize developer effort with minimal code modifications.
-                </li>
-                <li>
-                    To implement a user-friendly library.
-                </li>
-            </ul>
-        </div>
         <div id="architecture" class="container">
             <h2>Architecture</h2><br>
-            <div><img src="../images/Architecture.png" alt="Architecture Image"></div>
-        </div>
-        <div id="features" class="container">
-            <h2>Features</h2><br>
             <ul>
-                <li>Minimal changes in code.
-                </li>
-                <li>
-                    If the property is not present in database, it will take the default value from
-                    application.properties file.
-                </li>
-                <li>
-                    Changes the values in run time, need not restart the application.
-                </li>
-                <li>
-                    It is Environment specific.
-                </li>
-                <li>
-                    Nothing is default. The user has to give the conditions inorder to run the annotation.
-                </li>
-                <li>
-                    All the conditions and end points are thoroughly tested.
-                </li>
-            </ul>
-        </div>
-        <div id="demo" class="container">
-            <h2>Demo</h2><br>
-            <video controls>
-                <source src="../videos/demo.mp4" type="video/mp4">
-                <!-- <source src="../videos/demo.mp4" type="video/ogg"> -->
-                Your browser does not support the video tag.
-            </video>
+                <p>
+                    The encoder part receives the image as input and
+                    generates a feature vector of high dimensions. The
+                    3
+                    image goes through the layers of the Encoder model
+                    that converts the image to feature vector. The system
+                    does not understand anything but 0’s and 1’s and thus
+                    the image is converted to 0s and 1s. The image vector
+                    created is the form of binary format. The encoder
+                    is a group of convolutions that uses filters and uses
+                    pooling to help the system to focus on certain regions
+                    of the image. The encoded features from the encoder
+                    are given as input to the decoder. The decoder takes
+                    this high dimension features and generates a semantic
+                    segmentation mask. It is a process of recurrent units
+                    where it predicts an output at each stage. It accepts
+                    a hidden state and produces an output and its own
+                    hidden state. Various activation functions are used in
+                    the encoder-decoder model as per the application of
+                    the user.
+                </p><br>
+                <h4>Encoder</h4><br>
+                <li>Convolutional and Recurrent networks are the head
+                    and tail of the encoder decoder model. The convolution neural network works on the two dimensional
+                    image data and can be used in other dimensional data
+                    too. Use ResNet-50 to extract visual features from
+                    images. These features will serve as the input to our
+                    model.</li><br>
+                <h4>Attention Mechanism</h4><br>
+                <li>Implement an attention mechanism that combines
+                    image features and word embeddings. This allows our
+                    model to give more attention to certain image regions
+                    when generating specific words in the caption.</li><br>
+                <h4>Decoder</h4><br>
+                <li>Use LSTM (Long Short-Term Memory) as the recurrent neural network decoder. LSTM works by taking
+                    the image features and generating captions word by
+                    word. Maintain a memory of the previously generated
+                    words, enabling it to capture sequential dependencies
+                    in the text. Incorporate attention mechanisms to
+                    allow the model to focus on different parts of the
+                    image and provide more contextually relevant captions.</li><br>
+                <h4>GloVe Embeddings</h4><br>
+                <li>Incorporate gloVe word embeddings into the model.
+                    These embeddings enhance the model’s ability to
+                    understand word semantics, generalize to diverse
+                    vocabulary, and improve overall performance.</li> <br><br>
+                <p>By organizing these components into our model
+                    architecture, we can create a powerful system for
+                    generating image captions. The feature extraction
+                    step with ResNet-50 provides the visual context, the
+                    attention mechanism refines the focus, LSTM handles
+                    sequential word generation, and GloVe embeddings
+                    enhance the language understanding. This combination leverages both visual and semantic information
+                    to generate contextually relevant and coherent image
+                    captions.</p>
+            </ul><br>
+            <div><img src="../images/ImageCaptioningArchitecture.jpeg" alt="Architecture Image"></div>
         </div>
         <div id="future-development" class="container">
             <h2>Future Development</h2><br>
             <ul>
-                <li>To create a Professional UI for the Client.
+                <li>To get more accuracy in this model.
                 </li>
                 <li>
-                    To replace the inmemory cache with Redis.
-                </li>
-                <li>
-                    Replacing the cache reduces the multi node inconsistencies.
+                    I would also like to develop this using Transformers, which is the current trend.
                 </li>
             </ul>
         </div>
+        <div id="reports" class="container">
+            <h2>Reports</h2><br>
+            <div id="reports-div">
+                <div>
+                    <p>Literature Survey Report</p>
+                    <a href="../files/Image Captioning Literature Survey Report.pdf" download>
+                        <button type="submit">Download Here<img src="../images/Download.png" alt="Download CV"></button>
+                    </a>
+                </div>
+                <div>
+                    <p> Final Report</p>
+                    <a href="../files/Image Captioning Final Report.pdf" download>
+                        <button type="submit">Download Here<img src="../images/Download.png" alt="Download CV"></button>
+                    </a>
+                </div>
+            </div>
+        </div><br>
+
         <footer id="footer">
             <p id="copyright">Copyright © Varsha Reddy Arrabelli</p>
         </footer>
