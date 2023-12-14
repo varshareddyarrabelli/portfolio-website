@@ -40,6 +40,7 @@ body {
 }
 
 #intro a {
+    width: 200px;
     text-decoration: none;
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 1em 5em;
     margin: 20px 0;
 }
 
