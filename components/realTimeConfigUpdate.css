@@ -22,7 +22,7 @@ body {
 
 .container {
     padding: 10px 5%;
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 
 video{
@@ -38,9 +38,24 @@ video{
     color: rgb(225, 213, 213);
 }
 
-#objective ul{
+#main ul{
     padding: 0 2%;
 }
-#objective ul li{
+
+#main ul li{
     color: rgb(225, 213, 213);
+}
+
+#architecture div{
+    text-align: center;
+}
+
+#footer {
+    padding: 1%;
+    text-align: center;
+    background-color: #262626;
+}
+
+#copyright {
+    color: white;
 }
