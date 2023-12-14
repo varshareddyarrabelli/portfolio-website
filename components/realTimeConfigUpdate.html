@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Time Config Update</title>
     <link rel="stylesheet" href="realTimeConfigUpdate.css">
 </head>
+
 <body>
     <div id="main">
-        <div class="container">
+        <h1>Real Time Config Update</h1>
+        <div id="description" class="container">
             <h2>Description</h2><br>
-            <p>Typically, even minor changes can require days to redeploy the system. 
-                To mitigate this issue, we propose implementing a dynamic approach where the values in the configuration file can be reset during runtime, leveraging the data stored in the database.
-                By adopting this approach, users will have the ability to update property values without the necessity of a redeployment.
-                
-                </p>
+            <p>Typically, even minor changes can require days to redeploy the system.
+                To mitigate this issue, we propose implementing a dynamic approach where the values in the configuration
+                file can be reset during runtime, leveraging the data stored in the database.
+                By adopting this approach, users will have the ability to update property values without the necessity
+                of a redeployment.
+
+            </p>
         </div>
-        <video  controls>
+        <div id="objective" class="container">
+            <h2>Objective</h2><br>
+            <ul>
+                <li>To enable runtime modification of property values in the
+                    configuration file without requiring a redeployment process.
+                </li>
+                <li>
+                    To design a library which has minimal run time.
+                </li>
+                <li>
+                    To minimize developer effort with minimal code modifications.
+                </li>
+                <li>
+                    To implement a user-friendly library.
+                </li>
+            </ul>
+        </div>
+        <video controls>
             <source src="../videos/demo.mp4" type="video/mp4">
             <!-- <source src="../videos/demo.mp4" type="video/ogg"> -->
             Your browser does not support the video tag.
-          </video>
+        </video>
     </div>
 </body>
+
 </html>
