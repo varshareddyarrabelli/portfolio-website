@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Captioning</title>
-    <link rel="stylesheet" href="imageCaptioning.css">
+    <link rel="stylesheet" href="realTimeConfigUpdate.css">
 </head>
+
 <body>
-    Image Captioning
+    <div id="main">
+        <h1>Image Captioning</h1>
+        <div id="description" class="container">
+            <h2>Description</h2><br>
+            <p>Typically, even minor changes can require days to redeploy the system.
+                To mitigate this issue, we propose implementing a dynamic approach where the values in the configuration
+                file can be reset during runtime, leveraging the data stored in the database.
+                By adopting this approach, users will have the ability to update property values without the necessity
+                of a redeployment.
+
+            </p>
+        </div>
+        <div id="objective" class="container">
+            <h2>Objective</h2><br>
+            <ul>
+                <li>To enable runtime modification of property values in the
+                    configuration file without requiring a redeployment process.
+                </li>
+                <li>
+                    To design a library which has minimal run time.
+                </li>
+                <li>
+                    To minimize developer effort with minimal code modifications.
+                </li>
+                <li>
+                    To implement a user-friendly library.
+                </li>
+            </ul>
+        </div>
+        <div id="architecture" class="container">
+            <h2>Architecture</h2><br>
+            <div><img src="../images/Architecture.png" alt="Architecture Image"></div>
+        </div>
+        <div id="features" class="container">
+            <h2>Features</h2><br>
+            <ul>
+                <li>Minimal changes in code.
+                </li>
+                <li>
+                    If the property is not present in database, it will take the default value from
+                    application.properties file.
+                </li>
+                <li>
+                    Changes the values in run time, need not restart the application.
+                </li>
+                <li>
+                    It is Environment specific.
+                </li>
+                <li>
+                    Nothing is default. The user has to give the conditions inorder to run the annotation.
+                </li>
+                <li>
+                    All the conditions and end points are thoroughly tested.
+                </li>
+            </ul>
+        </div>
+        <div id="demo" class="container">
+            <h2>Demo</h2><br>
+            <video controls>
+                <source src="../videos/demo.mp4" type="video/mp4">
+                <!-- <source src="../videos/demo.mp4" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="future-development" class="container">
+            <h2>Future Development</h2><br>
+            <ul>
+                <li>To create a Professional UI for the Client.
+                </li>
+                <li>
+                    To replace the inmemory cache with Redis.
+                </li>
+                <li>
+                    Replacing the cache reduces the multi node inconsistencies.
+                </li>
+            </ul>
+        </div>
+        <footer id="footer">
+            <p id="copyright">Copyright © Varsha Reddy Arrabelli</p>
+        </footer>
+    </div>
 </body>
+
 </html>
