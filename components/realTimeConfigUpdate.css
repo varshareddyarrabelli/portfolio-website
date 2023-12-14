@@ -27,7 +27,6 @@ body {
 
 video{
     width: 100%;
-    padding: 10px 5%;
 }
 
 #main h2{
@@ -48,6 +47,10 @@ video{
 
 #architecture div{
     text-align: center;
+}
+
+#architecture div img{
+    width: 100%;
 }
 
 #footer {
