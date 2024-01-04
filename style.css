@@ -16,7 +16,6 @@ body {
 
 #header {
     width: 100%;
-    display: flex;
 }
 
 #closebtn {
@@ -32,10 +31,11 @@ body {
 }
 
 #intro {
-    flex-basis: 60%;
+    /* flex-basis: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: white;
 }
 
@@ -47,7 +47,7 @@ body {
 #header button {
     width: 200px;
     padding: 10px;
-    margin: 20px 0;
+    margin: 20px 0px 0px 0px;
     justify-content: center;
     background-color: #534a78;
     cursor: pointer;
@@ -62,12 +62,13 @@ body {
     height: 20px;
 }
 
-#background-img {
+/* #background-img {
     height: auto;
     max-width: 100%;
-}
+} */
 
 #name {
+    text-align: center;
     font-size: 50px;
     font-weight: bold;
 }
@@ -424,13 +425,12 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
-    #background-img {
+    /* #background-img {
         display: none;
         width: auto;
-    }
+    } */
 
     #intro {
-        margin-top: 3em;
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
@@ -439,9 +439,9 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 768px) {
-    #background-img {
+    /* #background-img {
         max-width: 300px;
-    }
+    } */
 
     #intro {
         max-width: 100%;
