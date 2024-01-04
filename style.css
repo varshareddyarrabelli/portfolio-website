@@ -62,11 +62,6 @@ body {
     height: 20px;
 }
 
-/* #background-img {
-    height: auto;
-    max-width: 100%;
-} */
-
 #name {
     text-align: center;
     font-size: 50px;
@@ -425,10 +420,6 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
-    /* #background-img {
-        display: none;
-        width: auto;
-    } */
 
     #intro {
         flex-basis: 100%;
@@ -439,9 +430,6 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 768px) {
-    /* #background-img {
-        max-width: 300px;
-    } */
 
     #intro {
         max-width: 100%;
